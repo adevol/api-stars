@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run FastAPI App",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "uvicorn",
+        "cwd": "${workspaceFolder}",
+        "args": [
+          "main:app",
+          "--host", "127.0.0.1",
+          "--port", "8000",
+          "--reload"
+        ],
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        },
+        "jinja": true
+      },
+      {
+        "name": "Run Unit Tests",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "unittest",
+        "cwd": "${workspaceFolder}",
+        "args": [
+          "discover",
+          "-s", "tests",
+          "-p", "test_*.py"
+        ],
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      }
+    ]
+  }
+  
