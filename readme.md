@@ -60,9 +60,20 @@ File Requirements:
 
 ## 🛠️ Dev Info
 Framework: FastAPI
+
 Language: Python 3.10+
-Run locally with:
+
+A working environment is provided in the file requirements.txt.
+To use this environment, please create a new environment and run:
+
+```bash
+pip install -r requirements.txt
 ```
+
+
+
+Run locally with:
+```bash
 python main.py
 ```
 * Open your browser to: http://127.0.0.1:8000/docs for interactive API documentation.
