@@ -38,10 +38,3 @@ async def compute_eddington_ratio_from_csv(
         lambda row: calculate_eddington_ratio(row['luminosity'], row['mass']), axis=1
     )
     return df.to_dict(orient="records")
-
-if __name__ == "__main__":
-    # For local testing, run the FastAPI server with uvicorn
-    # http://127.0.0.1:8000/docs#/ contains the API documentation
-    # You can test the API using curl or Postman.
-    import uvicorn
-    uvicorn.run("api_eddington:app", host="127.0.0.1", port=8000, reload=True)
