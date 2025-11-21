@@ -1,6 +1,6 @@
 # 📡 Eddington Ratio API
 
-This API provides tools for calculating the **Eddington ratio** of stars based on their physical properties.
+This API provides tools for calculating the **Eddington ratio** of stars based on their physical properties. It is intended as a small demo for the astronomy department of KU Leuven.
 
 The **Eddington ratio** is defined as:
 
